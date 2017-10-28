@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IColumnDefinition | espalier-js-docs</title>
+	<title>ITableButton | espalier-js-docs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,19 +54,27 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_src_grid_column_definition_.html">&quot;src/grid/column-definition&quot;</a>
+					<a href="../modules/_src_grid_table_button_.html">&quot;src/grid/table-button&quot;</a>
 				</li>
 				<li>
-					<a href="_src_grid_column_definition_.icolumndefinition.html">IColumnDefinition</a>
+					<a href="_src_grid_table_button_.itablebutton.html">ITableButton</a>
 				</li>
 			</ul>
-			<h1>Interface IColumnDefinition&lt;TRow&gt;</h1>
+			<h1>Interface ITableButton&lt;TRow&gt;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Define a button that is showin in the far right-hand
+						column of a row for a given record.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-type-parameters">
 				<h3>Type parameters</h3>
 				<ul class="tsd-type-parameters">
@@ -79,7 +87,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IColumnDefinition</span>
+						<span class="target">ITableButton</span>
 					</li>
 				</ul>
 			</section>
@@ -90,16 +98,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_grid_column_definition_.icolumndefinition.html#dataformatter" class="tsd-kind-icon">data<wbr>Formatter</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_grid_column_definition_.icolumndefinition.html#disablesort" class="tsd-kind-icon">disable<wbr>Sort</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_grid_column_definition_.icolumndefinition.html#longtitle" class="tsd-kind-icon">long<wbr>Title</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_grid_column_definition_.icolumndefinition.html#onclick" class="tsd-kind-icon">on<wbr>Click</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_grid_column_definition_.icolumndefinition.html#propertyname" class="tsd-kind-icon">property<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_grid_column_definition_.icolumndefinition.html#sortorder" class="tsd-kind-icon">sort<wbr>Order</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_grid_column_definition_.icolumndefinition.html#sortpropertyname" class="tsd-kind-icon">sort<wbr>Property<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_grid_column_definition_.icolumndefinition.html#templatename" class="tsd-kind-icon">template<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_grid_column_definition_.icolumndefinition.html#title" class="tsd-kind-icon">title</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_grid_column_definition_.icolumndefinition.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_grid_table_button_.itablebutton.html#buttonclass" class="tsd-kind-icon">button<wbr>Class</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_grid_table_button_.itablebutton.html#iconclass" class="tsd-kind-icon">icon<wbr>Class</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_grid_table_button_.itablebutton.html#onclick" class="tsd-kind-icon">on<wbr>Click</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_grid_table_button_.itablebutton.html#title" class="tsd-kind-icon">title</a></li>
 							</ul>
 						</section>
 					</div>
@@ -108,138 +110,54 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="dataformatter" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> data<wbr>Formatter</h3>
-					<div class="tsd-signature tsd-kind-icon">data<wbr>Formatter<span class="tsd-signature-symbol">:</span> <a href="_src_grid_espalier_data_formatter_.iespalierdataformatter.html" class="tsd-signature-type">IEspalierDataFormatter</a></div>
+					<a name="buttonclass" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> button<wbr>Class</h3>
+					<div class="tsd-signature tsd-kind-icon">button<wbr>Class<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/column-definition.ts#L70">src/grid/column-definition.ts:70</a></li>
+							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/table-button.ts#L6">src/grid/table-button.ts:6</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The data formatter to use. This will be chosen based on the
-							column type if none is specified.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="disablesort" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> disable<wbr>Sort</h3>
-					<div class="tsd-signature tsd-kind-icon">disable<wbr>Sort<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></div>
+					<a name="iconclass" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> icon<wbr>Class</h3>
+					<div class="tsd-signature tsd-kind-icon">icon<wbr>Class<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/column-definition.ts#L56">src/grid/column-definition.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/table-button.ts#L7">src/grid/table-button.ts:7</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>If you do not want this columb to be sortable, set this
-							to true.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="longtitle" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> long<wbr>Title</h3>
-					<div class="tsd-signature tsd-kind-icon">long<wbr>Title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/column-definition.ts#L32">src/grid/column-definition.ts:32</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>If there is a longer title than what fits in the column head,
-								put it here and it will show up in a tooltip when the user
-								hovers over the column header. Defaults to the title if left
-							undefined.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="onclick" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Click</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Click<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span></div>
+					<h3>on<wbr>Click</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Click<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/column-definition.ts#L38">src/grid/column-definition.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/table-button.ts#L9">src/grid/table-button.ts:9</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>If specified, the cell will have an anchor tag that calls
-							this method when it is clicked.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="propertyname" class="tsd-anchor"></a>
-					<h3>property<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">property<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/column-definition.ts#L10">src/grid/column-definition.ts:10</a></li>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>record<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TRow</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>record: <span class="tsd-signature-type">TRow</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
 						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The name of the property to bind the value of the table
-							cell to. This can be an HTML value.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="sortorder" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> sort<wbr>Order</h3>
-					<div class="tsd-signature tsd-kind-icon">sort<wbr>Order<span class="tsd-signature-symbol">:</span> <a href="../enums/_src_grid_enums_.sortorder.html" class="tsd-signature-type">SortOrder</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/column-definition.ts#L45">src/grid/column-definition.ts:45</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The first column to specify a sortOrder will be sorted
-								on by default, otherwise Espalier will sort on the first
-							column.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="sortpropertyname" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> sort<wbr>Property<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">sort<wbr>Property<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/column-definition.ts#L24">src/grid/column-definition.ts:24</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The name of the property to use when building the query
-								string for a sort operation on this column. This is helpful
-								if the value displayed in the cell comes from a computed
-							column. Defaults to the propertyName if left undefined.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="templatename" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> template<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">template<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/column-definition.ts#L64">src/grid/column-definition.ts:64</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The name of the template to use to display the data in
-								this column. This will be chosen based on the column type
-								if none is specified. You can configure a custom template
-							in the config, and use that here if desired.</p>
-						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -248,30 +166,9 @@
 					<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/column-definition.ts#L16">src/grid/column-definition.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/table-button.ts#L8">src/grid/table-button.ts:8</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The value to use for the header of the given column.
-							Defaults to the propertyName if left undefined.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="type" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/_src_grid_enums_.columntype.html" class="tsd-signature-type">ColumnType</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/column-definition.ts#L50">src/grid/column-definition.ts:50</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Specifies how Espalier should format the column data.</p>
-						</div>
-					</div>
 				</section>
 			</section>
 		</div>
@@ -284,7 +181,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_src_grid_buttons_cell_.html">"src/grid/buttons-<wbr>cell"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_src_grid_column_definition_.html">"src/grid/column-<wbr>definition"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -335,7 +232,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_src_grid_page_info_.html">"src/grid/page-<wbr>info"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_src_grid_table_button_.html">"src/grid/table-<wbr>button"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -354,37 +251,19 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_src_grid_column_definition_.icolumndefinition.html" class="tsd-kind-icon">IColumn<wbr>Definition</a>
+						<a href="_src_grid_table_button_.itablebutton.html" class="tsd-kind-icon">ITable<wbr>Button</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_src_grid_column_definition_.icolumndefinition.html#dataformatter" class="tsd-kind-icon">data<wbr>Formatter</a>
+								<a href="_src_grid_table_button_.itablebutton.html#buttonclass" class="tsd-kind-icon">button<wbr>Class</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_src_grid_column_definition_.icolumndefinition.html#disablesort" class="tsd-kind-icon">disable<wbr>Sort</a>
+								<a href="_src_grid_table_button_.itablebutton.html#iconclass" class="tsd-kind-icon">icon<wbr>Class</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_src_grid_column_definition_.icolumndefinition.html#longtitle" class="tsd-kind-icon">long<wbr>Title</a>
+								<a href="_src_grid_table_button_.itablebutton.html#onclick" class="tsd-kind-icon">on<wbr>Click</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_src_grid_column_definition_.icolumndefinition.html#onclick" class="tsd-kind-icon">on<wbr>Click</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_src_grid_column_definition_.icolumndefinition.html#propertyname" class="tsd-kind-icon">property<wbr>Name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_src_grid_column_definition_.icolumndefinition.html#sortorder" class="tsd-kind-icon">sort<wbr>Order</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_src_grid_column_definition_.icolumndefinition.html#sortpropertyname" class="tsd-kind-icon">sort<wbr>Property<wbr>Name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_src_grid_column_definition_.icolumndefinition.html#templatename" class="tsd-kind-icon">template<wbr>Name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_src_grid_column_definition_.icolumndefinition.html#title" class="tsd-kind-icon">title</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_src_grid_column_definition_.icolumndefinition.html#type" class="tsd-kind-icon">type</a>
+								<a href="_src_grid_table_button_.itablebutton.html#title" class="tsd-kind-icon">title</a>
 							</li>
 						</ul>
 					</li>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PageInfo | espalier-js-docs</title>
+	<title>EspalierCell | espalier-js-docs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_src_grid_page_info_.html">&quot;src/grid/page-info&quot;</a>
+					<a href="../modules/_src_grid_espalier_cell_.html">&quot;src/grid/espalier-cell&quot;</a>
 				</li>
 				<li>
-					<a href="_src_grid_page_info_.pageinfo.html">PageInfo</a>
+					<a href="_src_grid_espalier_cell_.espaliercell.html">EspalierCell</a>
 				</li>
 			</ul>
-			<h1>Class PageInfo</h1>
+			<h1>Class EspalierCell</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">PageInfo</span>
+						<span class="target">EspalierCell</span>
 					</li>
 				</ul>
 			</section>
@@ -82,16 +82,31 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_src_grid_page_info_.pageinfo.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_src_grid_espalier_cell_.espaliercell.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_src_grid_page_info_.pageinfo.html#active" class="tsd-kind-icon">active</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_src_grid_page_info_.pageinfo.html#disabled" class="tsd-kind-icon">disabled</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_src_grid_page_info_.pageinfo.html#page" class="tsd-kind-icon">page</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_src_grid_page_info_.pageinfo.html#text" class="tsd-kind-icon">text</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_src_grid_espalier_cell_.espaliercell.html#column" class="tsd-kind-icon">column</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_src_grid_espalier_cell_.espaliercell.html#config" class="tsd-kind-icon">config</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_src_grid_espalier_cell_.espaliercell.html#data" class="tsd-kind-icon">data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_src_grid_espalier_cell_.espaliercell.html#onclick" class="tsd-kind-icon">on<wbr>Click</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_src_grid_espalier_cell_.espaliercell.html#record" class="tsd-kind-icon">record</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_src_grid_espalier_cell_.espaliercell.html#viewstrategy" class="tsd-kind-icon">view<wbr>Strategy</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private-protected">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-protected"><a href="_src_grid_espalier_cell_.espaliercell.html#classname" class="tsd-kind-icon">class<wbr>Name</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private-protected">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_src_grid_espalier_cell_.espaliercell.html#attached" class="tsd-kind-icon">attached</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_src_grid_espalier_cell_.espaliercell.html#render" class="tsd-kind-icon">render</a></li>
 							</ul>
 						</section>
 					</div>
@@ -103,31 +118,22 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Page<wbr>Info<span class="tsd-signature-symbol">(</span>disabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, active<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, page<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_src_grid_page_info_.pageinfo.html" class="tsd-signature-type">PageInfo</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Espalier<wbr>Cell<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="_src_grid_espalier_config_.espalierconfig.html" class="tsd-signature-type">EspalierConfig</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_src_grid_espalier_cell_.espaliercell.html" class="tsd-signature-type">EspalierCell</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/page-info.ts#L1">src/grid/page-info.ts:1</a></li>
+									<li>Defined in src/grid/espalier-cell.ts:36</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>disabled: <span class="tsd-signature-type">boolean</span></h5>
-								</li>
-								<li>
-									<h5>active: <span class="tsd-signature-type">boolean</span></h5>
-								</li>
-								<li>
-									<h5>text: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>page: <span class="tsd-signature-type">number</span></h5>
+									<h5>config: <a href="_src_grid_espalier_config_.espalierconfig.html" class="tsd-signature-type">EspalierConfig</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_src_grid_page_info_.pageinfo.html" class="tsd-signature-type">PageInfo</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_src_grid_espalier_cell_.espaliercell.html" class="tsd-signature-type">EspalierCell</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -135,44 +141,136 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="active" class="tsd-anchor"></a>
-					<h3>active</h3>
-					<div class="tsd-signature tsd-kind-icon">active<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="column" class="tsd-anchor"></a>
+					<h3>column</h3>
+					<div class="tsd-signature tsd-kind-icon">column<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_src_grid_column_definition_.icolumndefinition.html" class="tsd-signature-type">IColumnDefinition</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/page-info.ts#L4">src/grid/page-info.ts:4</a></li>
+							<li>Defined in src/grid/espalier-cell.ts:11</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="disabled" class="tsd-anchor"></a>
-					<h3>disabled</h3>
-					<div class="tsd-signature tsd-kind-icon">disabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="config" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> config</h3>
+					<div class="tsd-signature tsd-kind-icon">config<span class="tsd-signature-symbol">:</span> <a href="_src_grid_espalier_config_.espalierconfig.html" class="tsd-signature-type">EspalierConfig</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/page-info.ts#L3">src/grid/page-info.ts:3</a></li>
+							<li>Defined in src/grid/espalier-cell.ts:38</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="page" class="tsd-anchor"></a>
-					<h3>page</h3>
-					<div class="tsd-signature tsd-kind-icon">page<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="data" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> data</h3>
+					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/page-info.ts#L6">src/grid/page-info.ts:6</a></li>
+							<li>Defined in src/grid/espalier-cell.ts:17</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="text" class="tsd-anchor"></a>
-					<h3>text</h3>
-					<div class="tsd-signature tsd-kind-icon">text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="onclick" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Click</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Click<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/page-info.ts#L5">src/grid/page-info.ts:5</a></li>
+							<li>Defined in src/grid/espalier-cell.ts:16</li>
 						</ul>
 					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="record" class="tsd-anchor"></a>
+					<h3>record</h3>
+					<div class="tsd-signature tsd-kind-icon">record<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/grid/espalier-cell.ts:14</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="viewstrategy" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> view<wbr>Strategy</h3>
+					<div class="tsd-signature tsd-kind-icon">view<wbr>Strategy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">InlineViewStrategy</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/grid/espalier-cell.ts:18</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-protected">
+					<a name="classname" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> class<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> className<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/grid/espalier-cell.ts:19</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="attached" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> attached</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">attached<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/grid/espalier-cell.ts:40</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="render" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> render</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">render<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/grid/espalier-cell.ts:44</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -194,7 +292,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_src_grid_espalier_.html">"src/grid/espalier"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_src_grid_espalier_cell_.html">"src/grid/espalier-<wbr>cell"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -233,7 +331,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_src_grid_helpers_.html">"src/grid/helpers"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_src_grid_page_info_.html">"src/grid/page-<wbr>info"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -255,22 +353,37 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_src_grid_page_info_.pageinfo.html" class="tsd-kind-icon">Page<wbr>Info</a>
+						<a href="_src_grid_espalier_cell_.espaliercell.html" class="tsd-kind-icon">Espalier<wbr>Cell</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_src_grid_page_info_.pageinfo.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_src_grid_espalier_cell_.espaliercell.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_src_grid_page_info_.pageinfo.html#active" class="tsd-kind-icon">active</a>
+								<a href="_src_grid_espalier_cell_.espaliercell.html#column" class="tsd-kind-icon">column</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_src_grid_espalier_cell_.espaliercell.html#config" class="tsd-kind-icon">config</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_src_grid_espalier_cell_.espaliercell.html#data" class="tsd-kind-icon">data</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_src_grid_espalier_cell_.espaliercell.html#onclick" class="tsd-kind-icon">on<wbr>Click</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_src_grid_page_info_.pageinfo.html#disabled" class="tsd-kind-icon">disabled</a>
+								<a href="_src_grid_espalier_cell_.espaliercell.html#record" class="tsd-kind-icon">record</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_src_grid_page_info_.pageinfo.html#page" class="tsd-kind-icon">page</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_src_grid_espalier_cell_.espaliercell.html#viewstrategy" class="tsd-kind-icon">view<wbr>Strategy</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_src_grid_page_info_.pageinfo.html#text" class="tsd-kind-icon">text</a>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-protected">
+								<a href="_src_grid_espalier_cell_.espaliercell.html#classname" class="tsd-kind-icon">class<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_src_grid_espalier_cell_.espaliercell.html#attached" class="tsd-kind-icon">attached</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_src_grid_espalier_cell_.espaliercell.html#render" class="tsd-kind-icon">render</a>
 							</li>
 						</ul>
 					</li>

@@ -81,13 +81,11 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_src_grid_enums_.columntype.html#button" class="tsd-kind-icon">Button</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_src_grid_enums_.columntype.html#currency" class="tsd-kind-icon">Currency</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_src_grid_enums_.columntype.html#date" class="tsd-kind-icon">Date</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_src_grid_enums_.columntype.html#datetime" class="tsd-kind-icon">Date<wbr>Time</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_src_grid_enums_.columntype.html#hyperlink" class="tsd-kind-icon">Hyper<wbr>Link</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_src_grid_enums_.columntype.html#integer" class="tsd-kind-icon">Integer</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_src_grid_enums_.columntype.html#number" class="tsd-kind-icon">Number</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_src_grid_enums_.columntype.html#text" class="tsd-kind-icon">Text</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_src_grid_enums_.columntype.html#time" class="tsd-kind-icon">Time</a></li>
 							</ul>
 						</section>
@@ -97,24 +95,20 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="button" class="tsd-anchor"></a>
-					<h3>Button</h3>
-					<div class="tsd-signature tsd-kind-icon">Button<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;7</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/enums.ts#L21">src/grid/enums.ts:21</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="currency" class="tsd-anchor"></a>
 					<h3>Currency</h3>
 					<div class="tsd-signature tsd-kind-icon">Currency<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/enums.ts#L16">src/grid/enums.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/enums.ts#L23">src/grid/enums.ts:23</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Formats the number for the users locale as currency
+							and right-aligns the content.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="date" class="tsd-anchor"></a>
@@ -122,9 +116,15 @@
 					<div class="tsd-signature tsd-kind-icon">Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;3</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/enums.ts#L17">src/grid/enums.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/enums.ts#L28">src/grid/enums.ts:28</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Formats the date to display the short-date using the users
+							locale.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="datetime" class="tsd-anchor"></a>
@@ -132,19 +132,31 @@
 					<div class="tsd-signature tsd-kind-icon">Date<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;5</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/enums.ts#L19">src/grid/enums.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/enums.ts#L38">src/grid/enums.ts:38</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Formats the date using the users locale and shows the short-date
+							on one line, followed by the short-time on the next line.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="hyperlink" class="tsd-anchor"></a>
-					<h3>Hyper<wbr>Link</h3>
-					<div class="tsd-signature tsd-kind-icon">Hyper<wbr>Link<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;6</span></div>
+					<a name="integer" class="tsd-anchor"></a>
+					<h3>Integer</h3>
+					<div class="tsd-signature tsd-kind-icon">Integer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;6</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/enums.ts#L20">src/grid/enums.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/enums.ts#L43">src/grid/enums.ts:43</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Formats the value as an integer using the users locale and
+							rounds to the nearest number.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="number" class="tsd-anchor"></a>
@@ -152,19 +164,15 @@
 					<div class="tsd-signature tsd-kind-icon">Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/enums.ts#L15">src/grid/enums.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/enums.ts#L18">src/grid/enums.ts:18</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="text" class="tsd-anchor"></a>
-					<h3>Text</h3>
-					<div class="tsd-signature tsd-kind-icon">Text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;0</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/enums.ts#L14">src/grid/enums.ts:14</a></li>
-						</ul>
-					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Formats the number for the users locale with 3 significant
+							digits, and right-aligns the content.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="time" class="tsd-anchor"></a>
@@ -172,9 +180,15 @@
 					<div class="tsd-signature tsd-kind-icon">Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;4</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/enums.ts#L18">src/grid/enums.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/jeremeevans/EspalierJS/blob/4fd7049/src/grid/enums.ts#L33">src/grid/enums.ts:33</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Formats the date to display the short-time usng the users
+							locale.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -183,6 +197,9 @@
 				<ul>
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_src_grid_buttons_cell_.html">"src/grid/buttons-<wbr>cell"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_src_grid_column_definition_.html">"src/grid/column-<wbr>definition"</a>
@@ -194,7 +211,13 @@
 						<a href="../modules/_src_grid_espalier_.html">"src/grid/espalier"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/_src_grid_espalier_cell_.html">"src/grid/espalier-<wbr>cell"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_src_grid_espalier_config_.html">"src/grid/espalier-<wbr>config"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_src_grid_espalier_data_formatter_.html">"src/grid/espalier-<wbr>data-<wbr>formatter"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_src_grid_espalier_filter_.html">"src/grid/espalier-<wbr>filter"</a>
@@ -204,6 +227,24 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_src_grid_espalier_settings_.html">"src/grid/espalier-<wbr>settings"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_src_grid_formatters_currency_formatter_.html">"src/grid/formatters/currency-<wbr>formatter"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_src_grid_formatters_date_formatter_.html">"src/grid/formatters/date-<wbr>formatter"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_src_grid_formatters_formatters_.html">"src/grid/formatters/formatters"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_src_grid_formatters_integer_formatter_.html">"src/grid/formatters/integer-<wbr>formatter"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_src_grid_formatters_number_formatter_.html">"src/grid/formatters/number-<wbr>formatter"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_src_grid_formatters_text_formatter_.html">"src/grid/formatters/text-<wbr>formatter"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_src_grid_helpers_.html">"src/grid/helpers"</a>
@@ -233,9 +274,6 @@
 						<a href="_src_grid_enums_.columntype.html" class="tsd-kind-icon">Column<wbr>Type</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_src_grid_enums_.columntype.html#button" class="tsd-kind-icon">Button</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
 								<a href="_src_grid_enums_.columntype.html#currency" class="tsd-kind-icon">Currency</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
@@ -245,13 +283,10 @@
 								<a href="_src_grid_enums_.columntype.html#datetime" class="tsd-kind-icon">Date<wbr>Time</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_src_grid_enums_.columntype.html#hyperlink" class="tsd-kind-icon">Hyper<wbr>Link</a>
+								<a href="_src_grid_enums_.columntype.html#integer" class="tsd-kind-icon">Integer</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
 								<a href="_src_grid_enums_.columntype.html#number" class="tsd-kind-icon">Number</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_src_grid_enums_.columntype.html#text" class="tsd-kind-icon">Text</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
 								<a href="_src_grid_enums_.columntype.html#time" class="tsd-kind-icon">Time</a>
