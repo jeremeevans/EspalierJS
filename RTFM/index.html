@@ -122,50 +122,23 @@ export <span class="hljs-class"><span class="hljs-keyword">class</span> <span cl
 					values is to import <code>EspalierConfig</code> into your app class, and set the configuration
 					to match your API. Because Aurelia dependency injection treats models such as these as
 				a singleton, the values you set in the app class will persist throughout your application. </p>
-				<h2 id="-espalierconfig-global-configuration-options"><code>EspalierConfig</code> global configuration options</h2>
-				<h3 id="defaultpagesize">defaultPageSize</h3>
-				<p>Set the default page size that Espalier requests if you do not specifiy it on
-				an Espalier instance. The default is 20.</p>
-				<h3 id="pageparametername">pageParameterName</h3>
-				<p>The parameter name indicating which page of results Espalier is requesting.
-				The default is &quot;Page&quot;.</p>
-				<h3 id="pagesizeparametername">pageSizeParameterName</h3>
-				<p>The parameter name indicating the page size parameter name. The default is
-				&quot;PageSize&quot;.</p>
-				<h3 id="sortonparametername">sortOnParameterName</h3>
-				<p>The parameter name that indicates which column to sort on. The default is &quot;SortOn&quot;.</p>
-				<h3 id="sortorderparametername">sortOrderParameterName</h3>
-				<p>The parameter name that indicates the sort order. The default is &quot;SortOrder&quot;</p>
-				<h3 id="descconst">descConst</h3>
-				<p>Indicates the constant value that will be passed to the sort order parameter when
-				the user is requesting to sort in descending order. The default is &quot;desc&quot;.</p>
-				<h3 id="ascconst">ascConst</h3>
-				<p>Indicates the constant value that will be passed to the sort order parameter when
-				the user is requesting to sort in ascending order. The default is &quot;asc&quot;.</p>
-				<h3 id="buttoncolor">buttonColor</h3>
-				<p>This rgb(x,x,x) color to use for the sorting and filter buttons. Espalier has several
-					SVG icons hard-coded into the script. It writes a CSS header with the button color
-				specified. This defaults to &quot;rgb(100,100,100)&quot;.</p>
-				<h3 id="getpage">getPage</h3>
-				<p>The function that is used to parse a page of results from the response from the
-					server. Here you can customize how results from your server are parsed and sent
-				back to Espalier. The default is:</p>
-				<pre><code><span class="hljs-keyword">public</span> getPage(instance: EspalierCustomElement&lt;<span class="hljs-built_in">any</span>&gt;, response: Response): Promise&lt;IEspalierPage&gt; {
-  <span class="hljs-keyword">return</span> response.json()
-    .<span class="hljs-keyword">then</span>((<span class="hljs-keyword">data</span>: <span class="hljs-built_in">any</span>) =&gt; {
-      const page: IEspalierPage = {
-        totalRecords: <span class="hljs-keyword">data</span>.TotalRecords,
-        records: <span class="hljs-keyword">data</span>.Results,
-        pageCount: Math.ceil(<span class="hljs-keyword">data</span>.TotalRecords / instance.pageSize),
-        currentPage: instance.page
-      };
+				<pre><code>import { EspalierConfig } from <span class="hljs-string">"espalier-js"</span><span class="hljs-comment">;</span>
 
-      <span class="hljs-keyword">return</span> page;
-    });
+@autoinject
+export class App {
+  constructor(espalierConfig: EspalierConfig) {
+      espalierConfig.defaultPageSize = <span class="hljs-number">20</span><span class="hljs-comment">;</span>
+      espalierConfig.pageParameterName = <span class="hljs-string">"filter.page"</span><span class="hljs-comment">;</span>
+      espalierConfig.pageSizeParameterName = <span class="hljs-string">"filter.pageSize"</span><span class="hljs-comment">;</span>
+      espalierConfig.sortOnParameterName = <span class="hljs-string">"filter.sortOn"</span><span class="hljs-comment">;</span>
+      espalierConfig.sortOrderParameterName = <span class="hljs-string">"filter.sortOrder"</span><span class="hljs-comment">;</span>
+      espalierConfig.<span class="hljs-keyword">buttonColor </span>= <span class="hljs-string">"rgb(11,66,104)"</span><span class="hljs-comment">;</span>
+  }
 }
-</code></pre><h2 id="configuring-an-espalier-instance">Configuring an Espalier instance</h2>
+</code></pre><p>View the documentation for <a href="http://jeremeevans.github.io/EspalierJS/RTFM/classes/_src_grid_espalier_config_.espalierconfig.html">EspalierConfig</a> to see all the available options.</p>
+				<h2 id="configuring-an-espalier-instance">Configuring an Espalier instance</h2>
 				<p>Individual instances of Espalier can be configured both through binding on the element in
-					HTML, and via the more advanced IEspalierSettings<TRow> interface. The options that can be
+					HTML, and an instance of <code>IEspalierSettings&lt;TRow&gt;</code> interface. The options that can be
 				bound in the HTML are:</p>
 				<h3 id="page-size">page-size</h3>
 				<p>A number representing the number of records to fetch per page. This defaults to the value
@@ -178,9 +151,9 @@ export <span class="hljs-class"><span class="hljs-keyword">class</span> <span cl
 				<p>The URL Espalier will call (using the Aurelia Fetch Client) to retrieve records to display in
 					the grid. If you have configured your fetch client with a base URL, this is a relative path
 				to the API endpoint you wish to consume. This value is required.</p>
-				<h3 id="settings-iespaliersettings-trow-">settings: IEspalierSettings<TRow>;</h3>
+				<p>The other instance-related options that can be configured using an <a href="http://jeremeevans.github.io/EspalierJS/RTFM/interfaces/_src_grid_espalier_settings_.iespaliersettings.html"><code>IEspalierSettings&lt;TRow&gt;</code></a>.</p>
 				<h2 id="filtering-an-espalier-grid">Filtering an Espalier grid</h2>
-				<p>To filter an Espalier grid, create a control that implements EspalierFilter.</p>
+				<p>To filter an Espalier grid, create a control that implements <a href="http://jeremeevans.github.io/EspalierJS/RTFM/classes/_src_grid_espalier_filter_.espalierfilter.html"><code>EspalierFilter</code></a>.</p>
 				<pre><code><span class="hljs-keyword">import</span> { EspalierFilter } <span class="hljs-keyword">from</span> <span class="hljs-string">"espalier-js"</span>;
 <span class="hljs-keyword">import</span> { MyFilterModel } <span class="hljs-keyword">from</span> <span class="hljs-string">"./my-filter-model"</span>;
 <span class="hljs-keyword">import</span> { customElement } <span class="hljs-keyword">from</span> <span class="hljs-string">"aurelia-framework"</span>;
@@ -190,8 +163,8 @@ export <span class="hljs-class"><span class="hljs-keyword">class</span> <span cl
   <span class="hljs-keyword">public</span> container: HTMLFormElement;
   <span class="hljs-keyword">protected</span> model: MyFilterModel = <span class="hljs-keyword">new</span> MyFilterModel();
 
-  <span class="hljs-keyword">protected</span> <span class="hljs-keyword">get</span> friendlyFilterDescription(): <span class="hljs-built_in">string</span> {
-    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.model.friendlyDescription();
+  <span class="hljs-keyword">protected</span> <span class="hljs-keyword">get</span> appliedFilters(): IFilterToken[] {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.model.getTokens();
   }
 
   <span class="hljs-keyword">protected</span> <span class="hljs-keyword">get</span> filterAsQueryString(): <span class="hljs-built_in">string</span> {
