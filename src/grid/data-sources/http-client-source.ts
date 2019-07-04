@@ -69,11 +69,13 @@ export class HttpClientSource<TData> implements IGridDataSource<TData> {
     }
 
     const data = responseMessage.content;
+    const totalRecords = data.totalRecords ? data.totalRecords : data.TotalRecords;
+    const results = data.results ? data.results : data.Results;
 
     return {
-      totalRecords: data.totalRecords,
-      records: data.results,
-      pageCount: Math.ceil(data.totalRecords / pageSize),
+      totalRecords: totalRecords,
+      records: results,
+      pageCount: Math.ceil(totalRecords / pageSize),
       currentPage: pageNumber
     };
   }
